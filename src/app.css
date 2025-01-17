@@ -1,3 +1,20 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+:root {
+    --yellow-color: #ffde59;
+    --red-color: #ff3131;
+}
+
+body {
+    font-family: itc_benguiat, sans-serif;
+    font-size: 1rem;
+
+    nav {
+        font-size: 2rem;
+        font-family: itc_benguiat, sans-serif;
+        color: var(--yellow-color);
+        text-transform: uppercase;
+    }
+}

@@ -1,0 +1,15 @@
+@font-face {
+    font-display: swap;
+    font-family: "itc_benguiat";
+    font-style: normal;
+    font-weight: normal;
+    src: url("/fonts/itc_benguiat_condensed.otf") format("opentype");
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "itc_benguiat";
+    font-style: normal;
+    font-weight: bold;
+    src: url("/fonts/itc_benguiat_condensed_bold.otf") format("opentype");
+}
