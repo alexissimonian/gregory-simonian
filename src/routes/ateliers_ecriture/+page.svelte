@@ -1,1 +1,6 @@
-<h1>Hello from ateliers d'écriture</h1>
+<script lang="ts">
+    import Navbar from "$lib/Navbar.svelte";
+</script>
+<header>
+    <Navbar/>
+</header>
