@@ -11,14 +11,12 @@
     --green-color: #6e7d5f;
     --blue-color: #d0e2f7;
     --beige-color: #fbf5d6;
+    --brown-color: #4b302b;
+    --red-color-contact: #e72625;
 
     /* paddings */
     --standard-padding: 30px;
     --light-padding: 15px;
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 body {
@@ -27,4 +25,10 @@ body {
 
 header, section {
     padding: var(--standard-padding);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }

@@ -134,10 +134,6 @@
     }
 
     section {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-
         h2 {
             font-size: 3rem;
             font-weight: bold;
