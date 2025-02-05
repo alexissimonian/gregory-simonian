@@ -1,10 +1,12 @@
 <script lang="ts">
-   import Navbar from "$lib/Navbar.svelte";
+    import Navbar from "$lib/Navbar.svelte";
+    import ContactButton from "$lib/ContactButton.svelte";
 </script>
+
 <div id="page-content">
     <header>
         <div class="header-text">
-            <Navbar --color="var(--yellow-color)"/>
+            <Navbar --color="var(--yellow-color)" />
         </div>
         <div class="header-text header-text-title">
             <h1>Grégory<br />Simonian</h1>
@@ -26,11 +28,12 @@
                         rassembler.
                     </li>
                     <li>
-                        Des récits venus des quatre coins du globe, pour découvrir
-                        la richesse des cultures du monde.
+                        Des récits venus des quatre coins du globe, pour
+                        découvrir la richesse des cultures du monde.
                     </li>
                     <li>
-                        Des contes pour tous les âges, des tout-petits aux adultes.
+                        Des contes pour tous les âges, des tout-petits aux
+                        adultes.
                     </li>
                     <li>
                         Vivez des histoires qui ont parcouru les siècles avant
@@ -38,37 +41,35 @@
                     </li>
                 </ul>
                 <div id="approach-cta-container">
-                    <a href="/spectacles">En savoir plus</a>
+                    <a href="brochures/spectacles">En savoir plus</a>
                 </div>
             </div>
             <div class="approach" id="atelier-ecriture">
                 <h4>Ateliers D'écriture</h4>
                 <ul>
                     <li>
-                        Ecrivez votre propre conte, en laissant libre cours à votre
-                        imagination.
+                        Ecrivez votre propre conte, en laissant libre cours à
+                        votre imagination.
                     </li>
-                    <li>Exprimez vos émotions à travers des récits personnels.</li>
+                    <li>
+                        Exprimez vos émotions à travers des récits personnels.
+                    </li>
                     <li>
                         Ateliers inclusifs, accessibles à tous les âges, aux
                         personnes en situation de handicap, à celles préférant
                         l'oral à l'écrit.
                     </li>
                     <li>
-                        Initiez-vous aux bases de la narration. Chaque participant
-                        repart avec un conte, écrit ou raconté.
+                        Initiez-vous aux bases de la narration. Chaque
+                        participant repart avec un conte, écrit ou raconté.
                     </li>
                 </ul>
                 <div id="approach-cta-container">
-                    <a href="ateliers_ecriture">En savoir plus</a>
+                    <a href="brochures/ateliers_ecriture">En savoir plus</a>
                 </div>
             </div>
         </div>
-        <div class="cta-section">
-            <button onclick={() => window.location.href = "/contact"}
-            >Me Contacter</button
-            >
-        </div>
+        <ContactButton />
     </section>
     <section>
         <h2>Par tous les lieux</h2>
@@ -88,11 +89,7 @@
 <img src=""/>
 <img src=""/> -->
         </div>
-        <div class="cta-section">
-            <button onclick={() => window.location.href = "/contact"}
-            >Me Contacter</button
-            >
-        </div>
+        <ContactButton />
     </section>
 </div>
 
@@ -239,16 +236,6 @@
                 flex-direction: column;
                 width: 30%;
                 height: 100%;
-            }
-        }
-
-        .cta-section {
-            padding: var(--standard-padding);
-            button {
-                font-size: 1.5rem;
-                background-color: var(--blue-color);
-                padding: 15px 30px;
-                border: 1px solid black;
             }
         }
     }
