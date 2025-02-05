@@ -1,4 +1,5 @@
 <script lang="ts">
+    import ContactButton from "$lib/ContactButton.svelte";
     import Navbar from "$lib/Navbar.svelte";
 </script>
 
@@ -75,5 +76,5 @@
     <strong>Prix: 90€ par séances</strong>
 </section>
 <section>
-    <button>Me Contacter</button>
+    <ContactButton />
 </section>

@@ -3,7 +3,7 @@
     import ContactButton from "$lib/ContactButton.svelte";
 </script>
 
-<div id="page-content">
+<div class="content">
     <header>
         <div class="header-text">
             <Navbar --color="var(--yellow-color)" />
@@ -94,11 +94,7 @@
 </div>
 
 <style>
-    #page-content {
-        background-image: url("/images/backgroundhome-seemless.png");
-        background-position: center;
-        background-size: contain;
-    }
+    @import "/css/home.css";
 
     header {
         /*background-image: url("/images/gregorysimonianhomeimage.JPG");*/
@@ -120,33 +116,9 @@
                 text-transform: uppercase;
             }
         }
-
-        h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            color: var(--yellow-color);
-            text-transform: uppercase;
-            text-shadow: var(--red-color) 1.5px 1.5px 0px;
-        }
     }
 
     section {
-        h2 {
-            font-size: 3rem;
-            font-weight: bold;
-            color: var(--yellow-color);
-            text-transform: uppercase;
-            text-shadow: var(--red-color) 1px 1px 0px;
-            padding: var(--standard-padding);
-        }
-
-        h3 {
-            font-size: 2rem;
-            color: var(--gray-color);
-            padding: 0 var(--standard-padding) var(--standard-padding)
-                var(--standard-padding);
-        }
-
         #deux-approches-eveiller-imaginaire {
             display: flex;
             flex-direction: row;
@@ -159,7 +131,7 @@
                 flex-direction: column;
                 height: 100%;
                 width: 50%;
-                background-image: url("/images/cadre-bleu-vert.svg");
+                background-image: url("/images/home-aproaches-frame.svg");
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -224,7 +196,7 @@
 
                 #liste-lieux-content {
                     height: 100%;
-                    background-image: url("/images/cadre-vert.svg");
+                    background-image: url("/images/home-green-yellow-frame.svg");
                     background-size: contain;
                     background-repeat: no-repeat;
                     background-position: center;

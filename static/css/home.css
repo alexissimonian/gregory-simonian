@@ -1,0 +1,28 @@
+.content {
+    background-image: url("/images/home-background.png");
+    background-position: center;
+    background-size: contain;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--yellow-color);
+    text-transform: uppercase;
+    text-shadow: var(--red-color) 1.5px 1.5px 0px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--yellow-color);
+    text-transform: uppercase;
+    text-shadow: var(--red-color) 1px 1px 0px;
+    padding: var(--standard-padding);
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--gray-color);
+    padding: 0 var(--standard-padding) var(--standard-padding) var(--standard-padding);
+}

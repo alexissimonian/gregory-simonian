@@ -1,5 +1,6 @@
 <script lang="ts">
     import Navbar from "$lib/Navbar.svelte";
+    import ContactButton from "$lib/ContactButton.svelte";
 </script>
 
 <header>
@@ -88,5 +89,5 @@
     <strong>Prix: 180€</strong>
 </section>
 <section>
-    <button>Me Contacter</button>
+    <ContactButton />
 </section>

@@ -2,5 +2,6 @@
     import "../app.css";
     let { children } = $props();
 </script>
-
-{@render children()}
+<div class="content">
+    {@render children()}
+</div>

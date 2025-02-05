@@ -2,4 +2,12 @@
     let { children } = $props();
 </script>
 
-{@render children()}
+<div class="content">
+    {@render children()}
+</div>
+
+<style>
+    .content{
+        background-image: url("images/contact-background.png");
+    }
+</style>
