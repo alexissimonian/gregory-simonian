@@ -41,7 +41,7 @@
                     </li>
                 </ul>
                 <div id="approach-cta-container">
-                    <a href="brochures/spectacles">En savoir plus</a>
+                    <a href="spectacles">En savoir plus</a>
                 </div>
             </div>
             <div class="approach" id="atelier-ecriture">
@@ -65,7 +65,7 @@
                     </li>
                 </ul>
                 <div id="approach-cta-container">
-                    <a href="brochures/ateliers_ecriture">En savoir plus</a>
+                    <a href="ateliers_ecriture">En savoir plus</a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
 </div>
 
 <style>
-    @import "/css/home.css";
+    @import "/css/green-yellow-design.css";
 
     header {
         /*background-image: url("/images/gregorysimonianhomeimage.JPG");*/

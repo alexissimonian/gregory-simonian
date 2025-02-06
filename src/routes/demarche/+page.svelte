@@ -10,7 +10,7 @@
     <section>
         <div id="chemin-conteur-content">
             <div class="chemin-paper-piece-container">
-                <h3>Démarche</h3>
+                <h2>Démarche</h2>
                 <div class="paper-piece">
                     <p>
                         Je vois le conte comme un espace de transformation et de
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <div class="chemin-paper-piece-container">
-                <h3>Mon parcours avant le conte</h3>
+                <h2>Mon parcours avant le conte</h2>
                 <div class="paper-piece">
                     <p>
                         Avant d’être conteur, mon parcours professionnel m'a
@@ -70,24 +70,15 @@
 </div>
 
 <style>
-    @import "/css/home.css";
+    @import "/css/green-yellow-design.css";
     #chemin-conteur-content {
         display: flex;
         flex-direction: column;
         text-align: left;
 
         .chemin-paper-piece-container {
-            h3 {
-                font-size: 2.5rem;
-                font-weight: bold;
-                color: var(--yellow-color);
-                text-transform: uppercase;
-                text-shadow: var(--red-color) 1px 1px 0px;
-                padding: var(--standard-padding);
-            }
-
             .paper-piece {
-                background-image: url("/images/paper.png");
+                background-image: url("/images/demarche-paper-piece.png");
                 background-position: center;
                 background-size: cover;
                 padding: var(--standard-padding) 70px;
