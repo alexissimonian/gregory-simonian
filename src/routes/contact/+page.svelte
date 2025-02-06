@@ -33,7 +33,7 @@
 
 <style>
     #contact-content {
-        background-image: url("/images/contact_background.png");
+        background-image: url("/images/contact-background.png");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
