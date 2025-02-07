@@ -81,12 +81,6 @@
                 background-image: url("/images/demarche-paper-piece.png");
                 background-position: center;
                 background-size: cover;
-                padding: var(--standard-padding) 70px;
-
-                p,
-                strong {
-                    font-size: 1.6rem;
-                }
             }
         }
     }

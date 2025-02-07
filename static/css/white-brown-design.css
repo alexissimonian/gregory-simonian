@@ -3,3 +3,28 @@
     background-position: center;
     background-size: cover;
 }
+
+h1 {
+    color: var(--brown-color);
+    text-shadow: rgb(253, 231, 207) 1.60277px 1.60277px 0px;
+    font-weight: 700;
+    font-size: 53px;
+    letter-spacing: 0.114em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    color: var(--marine-color);
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 0.002em;
+    text-transform: uppercase;
+}
+
+p, li {
+    font-size: 18.6667;
+    line-height: 26px;
+    letter-spacing: 0.156em;
+    font-weight: 400;
+}

@@ -110,8 +110,6 @@
 
         .header-text-description {
             p {
-                margin: 0 0 40px 0;
-                font-size: 2rem;
                 color: var(--yellow-color);
                 text-transform: uppercase;
             }
@@ -139,18 +137,11 @@
 
                 h4 {
                     height: 10%;
-                    font-size: 2rem;
-                    color: var(--orange-color);
-                    text-transform: uppercase;
                     padding: var(--light-padding);
                 }
 
                 ul {
-                    height: 80%;
-                    padding: var(--light-padding) 120px;
-
                     li {
-                        font-size: 1.5rem;
                         padding: var(--light-padding);
                     }
                 }

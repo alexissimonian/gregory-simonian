@@ -1,7 +1,7 @@
 <script>
     import Navbar from "$lib/Navbar.svelte";
 </script>
-<div id="contact-content">
+<div class="content">
     <header>
         <Navbar />
     </header>
@@ -32,7 +32,7 @@
 </div>
 
 <style>
-    #contact-content {
+    .content {
         background-image: url("/images/contact-background.png");
         background-position: center;
         background-size: cover;

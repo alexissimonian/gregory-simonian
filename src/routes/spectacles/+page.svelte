@@ -5,7 +5,7 @@
 
 <div class="content">
     <header>
-        <Navbar />
+        <Navbar --color="var(--brown-color)"/>
         <h1>Spectacles</h1>
         <div>
             <p>

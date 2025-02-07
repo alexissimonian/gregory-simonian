@@ -5,24 +5,45 @@
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: bold;
+    font-size: 49px;
+    line-height: 49px;
+    font-weight: 700;
     color: var(--yellow-color);
     text-transform: uppercase;
-    text-shadow: var(--red-color) 1.5px 1.5px 0px;
+    text-shadow: rgb(255, 49, 49) 1.47699px 1.47699px 0px;
+    letter-spacing: 0.114em;
 }
 
 h2 {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
     color: var(--yellow-color);
     text-transform: uppercase;
-    text-shadow: var(--red-color) 1px 1px 0px;
+    letter-spacing: 0.114em;
+    text-shadow: rgb(255, 49, 49) 1.5455px 1.5455px 0px;
     padding: var(--standard-padding);
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.002em;
+    line-height: 28px;
     color: var(--gray-color);
-    padding: 0 var(--standard-padding) var(--standard-padding) var(--standard-padding);
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--orange-color);
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 18.6667px;
+    line-height: 26px;
+    letter-spacing: 0.156em;
+    font-weight: 400;
 }

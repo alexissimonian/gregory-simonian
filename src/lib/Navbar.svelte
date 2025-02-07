@@ -9,7 +9,10 @@
     nav {
         display: flex;
         gap: 20px;
-        font-size: 2rem;
+        font-size: 27.3027px;
+        line-height: 42px;
+        font-weight: 400;
+        letter-spacing: -0.028em;
         text-transform: uppercase;
         color: var(--color, black);
     }
