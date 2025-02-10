@@ -98,7 +98,6 @@
 
     header {
         /*background-image: url("/images/gregorysimonianhomeimage.JPG");*/
-        height: 95dvh;
         background-color: black;
         display: flex;
         flex-direction: column;

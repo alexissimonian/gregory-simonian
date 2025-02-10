@@ -14,6 +14,10 @@
         font-weight: 400;
         letter-spacing: -0.028em;
         text-transform: uppercase;
-        color: var(--color, black);
+
+        a {
+            text-decoration: none;
+            color: var(--color, black);
+        }
     }
 </style>

@@ -9,6 +9,7 @@
         padding: var(--standard-padding);
         button {
             font-size: 1.5rem;
+            font-family: inherit;
             background-color: var(--blue-color);
             padding: 15px 30px;
             border: 1px solid black;
