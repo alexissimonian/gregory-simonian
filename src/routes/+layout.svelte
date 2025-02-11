@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
     import {GoogleAuthProvider, signInWithRedirect} from "firebase/auth";
-    import { auth } from "$lib/firebase.client";
+    import { auth } from "$lib/firebase/firebase.client.js";
 
     let { data, children } = $props();
     onMount(async () => {

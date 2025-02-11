@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Navbar from "$lib/Navbar.svelte";
-    import ContactButton from "$lib/ContactButton.svelte";
+    import Navbar from "$lib/components/Navbar.svelte";
+    import ContactButton from "$lib/components/ContactButton.svelte";
 </script>
 
 <div class="content">

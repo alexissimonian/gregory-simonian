@@ -1,8 +1,8 @@
-import { initializeFirebase, auth } from '$lib/firebase.client';
+import { initializeFirebase, auth } from '$lib/firebase/firebase.client';
 import { browser } from '$app/environment';
 import { onAuthStateChanged } from 'firebase/auth';
 
-export async function load({ url }) {
+export async function load() {
  if (browser) {
   try {
    initializeFirebase();
@@ -18,7 +18,6 @@ export async function load({ url }) {
  }
 
  return {
-  getAuthUser: getAuthUser,
-  url: url.pathname
+  getAuthUser: getAuthUser
  };
 }
