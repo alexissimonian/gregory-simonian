@@ -22,12 +22,11 @@ body {
   font-family: itc_benguiat, sans-serif;
 }
 
-header,
-section {
-  padding: var(--standard-padding);
-}
-
 section {
   display: flex;
   flex-direction: column;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0px;
 }

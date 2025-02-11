@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="chemin-paper-piece-container">
-                <h3>Formation</h3>
+                <h2>Formation</h2>
                 <div class="paper-piece">
                     <strong>Conte</strong><br />
                     <p>

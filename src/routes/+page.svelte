@@ -120,8 +120,6 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            padding: var(--standard-padding);
-            height: 75dvh;
 
             .approach {
                 display: flex;
@@ -132,23 +130,13 @@
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
-                padding: var(--standard-padding);
-
                 h4 {
                     height: 10%;
-                    padding: var(--light-padding);
-                }
-
-                ul {
-                    li {
-                        padding: var(--light-padding);
-                    }
                 }
 
                 #approach-cta-container {
                     height: 10%;
                     a {
-                        font-size: 1.8rem;
                         font-weight: bold;
                         color: var(--green-color);
                     }
@@ -159,7 +147,6 @@
         #par-tous-les-lieux-content {
             display: flex;
             flex-direction: row;
-            height: 80dvh;
             justify-content: center;
 
             #liste-lieux {
@@ -171,16 +158,11 @@
                 #liste-lieux-subtitle-container {
                     display: flex;
                     justify-content: center;
-                    margin-bottom: var(--standard-padding);
 
                     #liste-lieux-subtitle {
                         background-color: var(--beige-color);
                         border: 1px solid black;
                         width: fit-content;
-                    }
-
-                    h3 {
-                        padding: 5px 20px;
                     }
                 }
 

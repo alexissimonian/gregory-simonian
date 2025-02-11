@@ -22,7 +22,6 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 0.114em;
   text-shadow: rgb(255, 49, 49) 1.5455px 1.5455px 0px;
-  padding: var(--standard-padding);
 }
 
 h3 {
