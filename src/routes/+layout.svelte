@@ -1,15 +1,15 @@
 <script>
     import { onMount } from "svelte";
-    import {GoogleAuthProvider, signInWithRedirect} from "firebase/auth";
-    import { auth } from "$lib/firebase/firebase.client.js";
+    import {GoogleAuthProvider, signInWithPopup} from "firebase/auth";
+    import { auth } from "$lib/firebase/firebase.client";
 
     let { data, children } = $props();
     onMount(async () => {
         let user = await data.getAuthUser();
-        console.log(user);
+        
         if (!user){
             let provider = new GoogleAuthProvider();
-            signInWithRedirect(auth, provider);
+            signInWithPopup(auth, provider);
         }
     });
 </script>

@@ -1,49 +1,49 @@
 .content {
-    background-image: url("/images/home-background.png");
-    background-position: center;
-    background-size: contain;
+  background-image: url("/images/home-background.png");
+  background-position: center;
+  background-size: contain;
 }
 
 h1 {
-    font-size: 49px;
-    line-height: 49px;
-    font-weight: 700;
-    color: var(--yellow-color);
-    text-transform: uppercase;
-    text-shadow: rgb(255, 49, 49) 1.47699px 1.47699px 0px;
-    letter-spacing: 0.114em;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: 700;
+  color: var(--yellow-color);
+  text-transform: uppercase;
+  text-shadow: rgb(255, 49, 49) 1.47699px 1.47699px 0px;
+  letter-spacing: 0.114em;
 }
 
 h2 {
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 45px;
-    color: var(--yellow-color);
-    text-transform: uppercase;
-    letter-spacing: 0.114em;
-    text-shadow: rgb(255, 49, 49) 1.5455px 1.5455px 0px;
-    padding: var(--standard-padding);
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+  color: var(--yellow-color);
+  text-transform: uppercase;
+  letter-spacing: 0.114em;
+  text-shadow: rgb(255, 49, 49) 1.5455px 1.5455px 0px;
+  padding: var(--standard-padding);
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 0.002em;
-    line-height: 28px;
-    color: var(--gray-color);
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.002em;
+  line-height: 28px;
+  color: var(--gray-color);
 }
 
 h4 {
-    font-size: 28px;
-    line-height: 30px;
-    font-weight: 400;
-    color: var(--orange-color);
-    text-transform: uppercase;
+  font-size: 28px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--orange-color);
+  text-transform: uppercase;
 }
 
 p {
-    font-size: 18.6667px;
-    line-height: 26px;
-    letter-spacing: 0.156em;
-    font-weight: 400;
+  font-size: 18.6667px;
+  line-height: 26px;
+  letter-spacing: 0.156em;
+  font-weight: 400;
 }

@@ -1,31 +1,39 @@
 @font-face {
-    font-display: swap;
-    font-family: "itc_benguiat";
-    font-style: normal;
-    font-weight: normal;
-    src: url("/fonts/ITC Benguiat Book Condensed.woff2") format("woff2"), url("/fonts/ITC Benguiat Book Condensed.woff") format("woff");
+  font-display: swap;
+  font-family: "itc_benguiat";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url("/fonts/ITC Benguiat Book Condensed.woff2") format("woff2"),
+    url("/fonts/ITC Benguiat Book Condensed.woff") format("woff");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "itc_benguiat";
-    font-style: italic;
-    font-weight: normal;
-    src: url("/fonts/ITC Benguiat Book Condensed Italic.woff2") format("woff2"), url("/fonts/ITC Benguiat Book Condensed Italic.woff") format("woff");
+  font-display: swap;
+  font-family: "itc_benguiat";
+  font-style: italic;
+  font-weight: normal;
+  src:
+    url("/fonts/ITC Benguiat Book Condensed Italic.woff2") format("woff2"),
+    url("/fonts/ITC Benguiat Book Condensed Italic.woff") format("woff");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "itc_benguiat";
-    font-style: normal;
-    font-weight: bold;
-    src: url("/fonts/ITC Benguiat Bold Condensed.woff2") format("woff2"), url("/fonts/ITC Benguiat Bold Condensed.woff") format("woff");
+  font-display: swap;
+  font-family: "itc_benguiat";
+  font-style: normal;
+  font-weight: bold;
+  src:
+    url("/fonts/ITC Benguiat Bold Condensed.woff2") format("woff2"),
+    url("/fonts/ITC Benguiat Bold Condensed.woff") format("woff");
 }
 
 @font-face {
-    font-display: swap;
-    font-family: "itc_benguiat";
-    font-style: italic;
-    font-weight: bold;
-    src: url("/fonts/ITC Benguiat Bold Condensed Italic.woff2") format("woff2"), url("/fonts/ITC Benguiat Bold Condensed Italic.woff") format("woff");
+  font-display: swap;
+  font-family: "itc_benguiat";
+  font-style: italic;
+  font-weight: bold;
+  src:
+    url("/fonts/ITC Benguiat Bold Condensed Italic.woff2") format("woff2"),
+    url("/fonts/ITC Benguiat Bold Condensed Italic.woff") format("woff");
 }
