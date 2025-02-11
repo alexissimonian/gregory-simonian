@@ -14,6 +14,32 @@
   /* paddings */
   --standard-padding: 30px;
   --light-padding: 15px;
+
+  /* font sizes */
+  --paragraph-small: 0px;
+  --paragraph-medium: 0px;
+  --paragraph-large: 0px;
+  --paragraph-xlarge: 0px;
+
+  --main-title-small: 0px;
+  --main-title-medium: 0px;
+  --main-title-large: 0px;
+  --main-title-xlarge: 0px;
+
+  --second-title-small: 0px;
+  --second-title-medium: 0px;
+  --second-title-large: 0px;
+  --second-title-xlarge: 0px;
+
+  --third-title-small: 0px;
+  --third-title-medium: 0px;
+  --third-title-large: 0px;
+  --third-title-xlarge: 0px;
+
+  --fourth-title-small: 0px;
+  --fourth-title-medium: 0px;
+  --fourth-title-large: 0px;
+  --fourth-title-xlarge: 0px;
 }
 
 body {
@@ -27,6 +53,10 @@ section {
   flex-direction: column;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0px;
 }
