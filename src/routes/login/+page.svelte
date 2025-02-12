@@ -1,13 +1,11 @@
 <script>
     import {GoogleAuthProvider, signInWithPopup} from "firebase/auth";
-    import { auth } from "$lib/firebase/firebase.client";
-    import { goto } from "$app/navigation";
+    import { firebaseClientAuth } from "$lib/firebase/firebase.client";
 
     async function loginWithGoogle() {
         const provider = new GoogleAuthProvider();
-        await signInWithPopup(auth, provider).then(() => {
-            goto('/');
-        });
+        const result = await signInWithPopup(firebaseClientAuth, provider);
+        console.log(result);
     };
 </script>
 
