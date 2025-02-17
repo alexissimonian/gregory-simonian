@@ -5,12 +5,13 @@
 
     async function loginWithGoogle() {
         const provider = new GoogleAuthProvider();
-        let result = await signInWithPopup(firebaseClientAuth, provider)
+        const user = await signInWithPopup(firebaseClientAuth, provider)
             .catch((error) => {
                 console.error(error.message);
             });
 
-        const response = await fetch('/api/auth', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(result)});
+        const idToken = await user?.user.getIdToken();
+        const response = await fetch('/api/auth', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(idToken)});
         if (response.ok){
            goto('/');
         } else {

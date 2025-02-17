@@ -9,7 +9,7 @@ export const handle: Handle = async ({ event, resolve }) => {
   }
 
   if (ENVIRONMENT == "development") {
-    if (event.url.pathname != "/login") {
+    if (event.url.pathname != "/login" && event.url.pathname != "/api/auth") {
       return new Response(null, {
         status: 302,
         headers: { location: "/login" },
