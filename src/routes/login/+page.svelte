@@ -11,11 +11,11 @@
             });
 
         const idToken = await user?.user.getIdToken();
-        const response = await fetch('/api/auth', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(idToken)});
+        const response = await fetch('/api/auth/verifyIdToken', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(idToken)});
         if (response.ok){
-           await goto('/');
+            goto('/');
         } else {
-            await goto('/errors/unauthorized')
+            goto('/errors/unauthorized');
         }
     }
 </script>
