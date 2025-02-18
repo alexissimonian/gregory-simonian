@@ -11,10 +11,13 @@ if(ENVIRONMENT == "local"){
             });
         }}
     );
-} else {
+} else if (ENVIRONMENT == "online") {
     if (!admin.apps.length){
         admin.initializeApp();
     }
 }
 
-export const adminAuth = admin.auth();
+const adminAuth = admin.auth();
+const adminFirestore = admin.firestore();
+
+export {adminAuth, adminFirestore};
