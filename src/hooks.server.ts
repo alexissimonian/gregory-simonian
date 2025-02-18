@@ -1,14 +1,14 @@
 import type { Handle } from "@sveltejs/kit";
-import { ENVIRONMENT } from "$env/static/private";
+import { STAGE } from "$env/static/private";
 
 export const handle: Handle = async ({ event, resolve }) => {
-  if (ENVIRONMENT != "development") {
+  if (STAGE != "development") {
     if (event.url.pathname.includes("login")) {
       return new Response(null, { status: 302, headers: { location: "/" } });
     }
   }
 
-  if (ENVIRONMENT == "development") {
+  if (STAGE == "development") {
     if (event.url.pathname != "/login" && !event.url.pathname.startsWith("/api/auth") && !event.url.pathname.startsWith("/errors")) {
       const session = event.cookies.get("session");
       if (!session) {
