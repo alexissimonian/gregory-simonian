@@ -9,7 +9,7 @@ export async function POST({request}){
         if (decodedClaim.email && emails.includes(decodedClaim.email)){
             return json({ message: 'authorized' }, {status: 200})
         } else {
-            return json({ message: 'unauthorized' }, {status: 403});
+            return json({ message: 'unauthorized' }, {status: 401});
         }
     })
 }

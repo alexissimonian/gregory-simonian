@@ -12,7 +12,7 @@
             <p>Contactez-moi, je suis à votre écoute !</p>
         </div>
         <div id="contact-form">
-            <form method="POST">
+            <form method="POST" action="?/create">
                 <label>
                     Nom
                     <input name="nom" required/>

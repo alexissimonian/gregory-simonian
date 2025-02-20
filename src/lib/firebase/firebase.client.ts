@@ -1,5 +1,8 @@
-import { getApps, initializeApp, type FirebaseApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { initializeApp, type FirebaseApp } from "firebase/app";
+import { getAuth, type Auth } from "firebase/auth";
+
+export let firebaseClientApp: FirebaseApp | undefined;
+export let firebaseClientAuth: Auth;
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
@@ -10,14 +13,9 @@ const firebaseConfig = {
     appId: import.meta.env.VITE_FIREBASE_APPID,
 };
 
-let firebaseClientApp: FirebaseApp | undefined;
-
-if (!getApps().length) {
-    firebaseClientApp = initializeApp(firebaseConfig, "client");
-} else {
-    firebaseClientApp = getApps()[0];
+export const initializeFirebaseClient = () => {
+    if (!firebaseClientApp){
+        firebaseClientApp = initializeApp(firebaseConfig, "client");
+        firebaseClientAuth = getAuth(firebaseClientApp);
+    }
 }
-
-const firebaseClientAuth = getAuth(firebaseClientApp);
-
-export { firebaseClientApp, firebaseClientAuth };
