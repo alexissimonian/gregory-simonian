@@ -1,6 +1,33 @@
-<script>
+<script lang='ts'>
     import Navbar from "$lib/components/Navbar.svelte";
+    import { onMount } from "svelte";
+    
+    const SITE_KEY = import.meta.env.VITE_CLOUDFLARE_SITEKEY;
+    let canSendForm = false;
+    onMount(() => {
+        window.turnstile.render('#turnstile-container', {
+            sitekey: SITE_KEY,
+            theme: 'light',
+            callback: async function(token) {
+                let data = new FormData();
+                data.append('token', token);
+                let response = await fetch('?/token', {
+                    method: 'POST',
+                    body: data
+                })
+
+                if(response.ok){
+                    canSendForm = true;
+                }
+            }
+        });
+    })
 </script>
+
+
+<svelte:head>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" defer></script>
+</svelte:head>
 
 <div class="content">
     <header>
@@ -26,7 +53,8 @@
                     Message
                     <textarea name="message" required></textarea>
                 </label>
-                <button type="submit">Envoyer</button>
+                <div id="turnstile-container"></div>
+                <button type="submit" disabled={!canSendForm}>Envoyer</button>
             </form>
         </div>
     </section>

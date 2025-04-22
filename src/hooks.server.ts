@@ -6,16 +6,6 @@ export const handle: Handle = async ({ event, resolve }) => {
     if (event.url.pathname.includes("login")) {
       return new Response(null, { status: 302, headers: { location: "/" } });
     }
-
-    if (event.url.pathname.includes("contact")) {
-      const verify = event.cookies.get("verify");
-      if (!verify){
-        return new Response(null, {
-          status: 302,
-          headers: {location : "/verify"},
-        })
-      }
-    }
   }
 
   if (STAGE == "development") {
